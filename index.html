@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Jump</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<canvas id="canvas">
+			Aww, your browser doesn't support HTML5!
+		</canvas>
+
+		<div id="mainMenu">
+			<h1>Archery</h1>
+			<h3>using HTML5,</h3>
+			<h3>...by <a href="http://twitter.com/whichrakesh/" target="_blank">Rakesh Ranjan Nayak</a></h3>
+
+			<a class="button" href="javascript:init()">Play</a>
+		</div>
+		
+		<div id="gameOverMenu">
+			<h1>game over!</h1>
+			<h3 id="go_score">you scored 0 points</h3>
+
+			<a class="button" href="javascript:reset()">Restart</a>
+			<a id="tweetBtn" target="_blank" class="button tweet" href="#">Tweet score</a>
+
+			<a id="fbBtn" target="_blank" class="button fb" href="#">Post on FB</a>
+		</div>
+		
+		
+		<!-- Preloading image ;) -->
+		<img id="sprite" src="http://i.imgur.com/2WEhF.png"/>
+		<img id="arrow" src="arrow.png"/>
+		<img id="bow" src="bow.png"/>
+		<img id="fruit" src="fruits.png"/>
+		<img id="tree" src="tree4.png"/>
+		
+		<div id="scoreBoard">
+			score:<span id="score">0</span>
+			Time remaining:<span id="time">50</span>
+		</div>
+
+	</div>
+	<script src="rc7.js"></script>
+</body>
+</html>	
